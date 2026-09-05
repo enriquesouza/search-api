@@ -41,6 +41,7 @@ from mojosearch.web.serve_nearby_route import serve_nearby_route
 from mojosearch.web.state_and_seed import (
     STATE_ENV as NEARBY_STATE_ENV,
     NearbyState,
+    NearbyStateSlot,
     make_state,
     seed_canonical_payload_into_state,
 )

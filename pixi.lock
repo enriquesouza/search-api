@@ -60,7 +60,7 @@ environments:
       - conda: https://conda.modular.com/max-nightly/osx-arm64/mojo-1.0.0-release.conda
       - conda: https://conda.modular.com/max-nightly/osx-arm64/mojo-compiler-1.0.0-release.conda
       - conda: https://repo.prefix.dev/modular-community/osx-arm64/emberjson-0.3.4-h60d57d3_0.conda
-      - conda_source: mojoflask[9aa8bf09] @ git+https://github.com/enriquesouza/mojoflask?tag=v0.8.5#e43cee1cf438d62019213c8e4ab7be311a740d92
+      - conda_source: mojoflask[fa7a9e5d] @ git+https://github.com/enriquesouza/mojoflask?tag=v0.8.6#9bd0a7353745fec0f36611cbb92ac2ef61c8b587
       - conda_source: mojoka[07e9609a] @ git+https://github.com/enriquesouza/mojoka?tag=v0.3.0#e67dce7abfeaedaa4e85912e6124bd1524bd978d
       - conda_source: mojolinq[ddf10e6c] @ git+https://github.com/enriquesouza/mojolinq?tag=v0.2.0#60ecea11f4b6eaaa31bc829da0340282465de1ce
       - conda_source: mojoserde[ebbc8952] @ git+https://github.com/enriquesouza/mojoserde?tag=v0.5.0#b94de3c15c4a82952c35438c4b81617b077bcdc5
@@ -632,8 +632,8 @@ packages:
   run_exports: {}
   size: 10337220
   timestamp: 1787047028195
-- conda_source: mojoflask[9aa8bf09] @ git+https://github.com/enriquesouza/mojoflask?tag=v0.8.5#e43cee1cf438d62019213c8e4ab7be311a740d92
-  version: 0.8.5
+- conda_source: mojoflask[fa7a9e5d] @ git+https://github.com/enriquesouza/mojoflask?tag=v0.8.6#9bd0a7353745fec0f36611cbb92ac2ef61c8b587
+  version: 0.8.6
   build: h60d57d3_0
   subdir: osx-arm64
   variants:

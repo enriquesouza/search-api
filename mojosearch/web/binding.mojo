@@ -46,14 +46,6 @@ struct _RequestParamRange(Copyable, Movable):
     var offset: Int
     var length: Int
 
-    def __copyinit__(out self, existing: Self):
-        self.offset = existing.offset
-        self.length = existing.length
-
-    def __moveinit__(out self, ownedexisting: Self):
-        self.offset = existing.offset
-        self.length = existing.length
-
     def absent(self) -> Bool:
         return self.offset == RANGE_ABSENT
 

@@ -17,11 +17,13 @@ build-selftest = { cmd = "mojo build -I . tests/selftest.mojo -o selftest_bin" }
 run-selftest = "mojo run -I . tests/selftest.mojo"
 build-entities-selftest = { cmd = "mojo build -I . tests/entities_selftest.mojo -o entities_selftest_bin" }
 run-entities-selftest = "mojo run -I . tests/entities_selftest.mojo"
+build-strip-test = { cmd = "mojo build -I . tests/strip_html_test.mojo -o strip_test_bin" }
+run-strip-test = "mojo run -I . tests/strip_html_test.mojo"
 precompile = "mojo precompile mojosearch -o mojosearch.mojoc"
 
 [dependencies]
 mojo = "=1.0.0"
-mojoflask = { git = "https://github.com/enriquesouza/mojoflask.git", tag = "v0.8.5" }
+mojoflask = { git = "https://github.com/enriquesouza/mojoflask.git", tag = "v0.8.6" }
 mojoka = { git = "https://github.com/enriquesouza/mojoka.git", tag = "v0.3.0" }
 pqmojo = { git = "https://github.com/enriquesouza/pqmojo.git", tag = "v0.8.0" }
 mojoserde = { git = "https://github.com/enriquesouza/mojoserde.git", tag = "v0.5.0" }

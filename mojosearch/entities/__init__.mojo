@@ -4,7 +4,10 @@ from the application with their wire bytes frozen.
 origin: alugue-mojo-api models/ + services/search/taxonomy_render.mojo
 (wire DTO structs)
 """
-
+from mojosearch.entities.envelope import (
+    ERROR_BODY,
+    OkResponseWrapperJson,
+)
 from mojosearch.entities.listing import (
     ListingJson,
     NearbyListingRow,
@@ -16,6 +19,12 @@ from mojosearch.entities.listing_card import (
     QualityJson,
     QualityRow,
     listing_card_from_row,
+)
+from mojosearch.entities.listing_details import (
+    ChildrenIds,
+    DetailsJson,
+    ListingDetailsRow,
+    details_out_of,
 )
 from mojosearch.entities.photo_entries import (
     PhotoEntries,
