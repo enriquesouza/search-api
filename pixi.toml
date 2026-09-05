@@ -1,0 +1,42 @@
+[workspace]
+authors = ["Enrique Souza"]
+channels = ["conda-forge", "https://conda.modular.com/max-nightly", "https://conda.modular.com/max", "https://repo.prefix.dev/modular-community"]
+preview = ["pixi-build"]
+description = "mojosearch — the SEARCH domain library: entities, queries, services and the two-key nearby cache, served behind the app's mojoflask layer"
+name = "mojosearch"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+license = "MIT"
+license-file = "LICENSE"
+readme = "README.md"
+homepage = "https://github.com/enriquesouza/search-api"
+repository = "https://github.com/enriquesouza/search-api"
+
+[tasks]
+build-selftest = { cmd = "mojo build -I . tests/selftest.mojo -o selftest_bin" }
+run-selftest = "mojo run -I . tests/selftest.mojo"
+precompile = "mojo precompile mojosearch -o mojosearch.mojoc"
+
+[dependencies]
+mojo = "=1.0.0"
+mojoflask = { git = "https://github.com/enriquesouza/mojoflask.git", tag = "v0.8.5" }
+mojoka = { git = "https://github.com/enriquesouza/mojoka.git", tag = "v0.3.0" }
+pqmojo = { git = "https://github.com/enriquesouza/pqmojo.git", tag = "v0.8.0" }
+mojoserde = { git = "https://github.com/enriquesouza/mojoserde.git", tag = "v0.5.0" }
+mojolinq = { git = "https://github.com/enriquesouza/mojolinq.git", tag = "v0.2.0" }
+
+[package]
+name = "mojosearch"
+version = "0.1.0"
+
+[package.build]
+backend = { name = "pixi-build-mojo", version = "0.*" }
+
+[package.host-dependencies]
+mojo-compiler = "=1.0.0"
+
+[package.build-dependencies]
+mojo-compiler = "=1.0.0"
+
+[package.run-dependencies]
+mojo-compiler = "=1.0.0"
