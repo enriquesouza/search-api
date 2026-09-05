@@ -39,3 +39,5 @@ from mojosearch.entities.taxonomy_wire import (
     GroupedChildLocalizedJson,
     LocalizedFilterJson,
 )
+
+from .html_to_text import strip_html_to_text
