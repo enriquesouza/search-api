@@ -5,7 +5,7 @@ preview = ["pixi-build"]
 description = "mojosearch — the SEARCH domain library: entities, queries, services and the two-key nearby cache, served behind the app's mojoflask layer"
 name = "mojosearch"
 platforms = ["osx-arm64"]
-version = "0.1.0"
+version = "0.1.1"
 license = "MIT"
 license-file = "LICENSE"
 readme = "README.md"
@@ -28,10 +28,11 @@ mojoka = { git = "https://github.com/enriquesouza/mojoka.git", tag = "v0.3.0" }
 pqmojo = { git = "https://github.com/enriquesouza/pqmojo.git", tag = "v0.8.0" }
 mojoserde = { git = "https://github.com/enriquesouza/mojoserde.git", tag = "v0.5.0" }
 mojolinq = { git = "https://github.com/enriquesouza/mojolinq.git", tag = "v0.2.0" }
+emberjson = ">=0.3.4,<0.4"
 
 [package]
 name = "mojosearch"
-version = "0.1.0"
+version = "0.1.1"
 
 [package.build]
 backend = { name = "pixi-build-mojo", version = "0.*" }
