@@ -43,12 +43,13 @@ where business names live.
 ## Development
 
 ```bash
-pixi run run-selftest      # golden-byte wire checks against app payloads
-pixi run build-selftest
+pixi run run-entities-selftest   # entity wire proofs vs app golden bytes
+pixi run run-selftest            # shared entrypoint (queries wave)
 ```
 
-The selftest proves the entities serialize to the exact bytes captured in
-the application's `payloads/nearby_300.json` golden payloads.
+The entities selftest proves the moved entities serialize to the exact
+bytes captured in the application's `payloads/nearby_300.json` golden
+payloads (regenerate fixtures with `python3 tools/gen_fixture_literals.py`).
 
 ## License
 
